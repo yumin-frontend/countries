@@ -1,68 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Getting up and Running:
+* Clone this repository locally
+* In the root directory of this repository, run 'yarn'
+* After that, run 'yarn dev' to start the proxy server and build the front-end (Note: it will watch for changes in `/src` and recompile for you).
 
-## Available Scripts
+Instructions:
+* The goal of this project is to update this basic web app to display some basic information about the countries of the world. The data for your page will be coming from the JSONs on http://country.io/data/, but will be accessible to you at `/api/[name of file]`, so for example, `/api/names` will return this file: http://country.io/names.json.
+* Features to Add:
+    - Add a list to the page containing the names of all the countries return by `/api/names`.
+    - Updating the value of the `continent` select will filter your list to just the countries that exist on that continent.
+    - Add a dropdown with an option for each country. Selecting a country in the dropdown will remove the list of all countries and will list a specific countries information:
+        1) Full Name
+        2) Continent
+        3) Three-letter ISO Code
+        4) Capital Name
+        5) Phone Code
+        6) Three-letter Currency Code
+        7) Currency Symbol, if avaible, in the `currencies.js` file
+        8) Image of the country's flag (use https://www.countryflags.io/ for the image), if available
+        9) Link to Wikipedia article (assume wikipedia url is based off country name in `/api/names`)
+    - In the list of all countries, clicking on an individual country's name, will also display the individual's country name
+    - Render 'Loading...' while data is being fetched from the API
 
-In the project directory, you can run:
 
-### `yarn start`
+Extra Credit:
+* Add pagination to the list of all countries. Each page should contain 20 items and users should be able to, at least, move one page forward and backward at any one time.
+* Styling: make it look nice
+* Separate the list of countries and the details of an individual country into two separate pages. The list view should be accessible at http://localhost:3000/ and the details view should be accessible at http://localhost:3000/[two letter code of the country], e.g. http://localhost:3000/us for the United States.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+How to Turn it In:
+* Push a completed assignment to a new repository on something like Github
+* Send a link to the repository to Rocketrip. If you would like to keep the repository private, give @cgatling access to the repository.

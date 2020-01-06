@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+    render() {
+        return (
+          <div className="App">
+            <h1> Country Data </h1>
+            <label htmlFor="continet">Select a Continent</label>
+            <select id="continent">
+              <option value="">(All)</option>
+              <option value="AF">Africa</option>
+              <option value="AS">Asia</option>
+              <option value="EU">Europe</option>
+              <option value="NA">North America</option>
+              <option value="OC">Oceania</option>
+              <option value="SA">South America</option>
+            </select>
+          </div>
+        );
+    }
 }
 
 export default App;
