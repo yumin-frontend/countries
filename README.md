@@ -1,7 +1,7 @@
 Getting up and Running:
 * Clone this repository locally
-* In the root directory of this repository, run 'yarn'
-* After that, run 'yarn dev' to start the proxy server and build the front-end (Note: it will watch for changes in `/src` and recompile for you).
+* In the root directory of this repository, run `yarn`
+* After that, run `yarn dev` to start the proxy server and build the front-end (Note: it will watch for changes in `/src` and recompile for you).
 
 Instructions:
 * The goal of this project is to update this basic web app to display some basic information about the countries of the world. The data for your page will be coming from the JSONs on http://country.io/data/, but will be accessible to you at `/api/[name of file]`, so for example, `/api/names` will return this file: http://country.io/names.json.
