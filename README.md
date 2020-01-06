@@ -1,14 +1,15 @@
 Getting up and Running:
 * Clone this repository locally
-* In the root directory of this repository, run `yarn`
-* After that, run `yarn dev` to start the proxy server and build the front-end (Note: it will watch for changes in `/src` and recompile for you).
+* In the root directory of this repository, run `yarn` or `npm install`
+* After that, run `yarn dev` (or `npm run dev`) to start the proxy server and build the front-end (Note: it will watch for changes in `/src` and recompile for you).
 
 Instructions:
 * The goal of this project is to update this basic web app to display some basic information about the countries of the world. The data for your page will be coming from the JSONs on http://country.io/data/, but will be accessible to you at `/api/[name of file]`, so for example, `/api/names` will return this file: http://country.io/names.json.
+* You're welcome to use external libraries, but the goal of this assignment is to see your coding skills so use them sparingly. The vast majority of these features can be built using no libraries at all.
 * Features to Add:
     - Add a list to the page containing the names of all the countries return by `/api/names`.
     - Updating the value of the `continent` select will filter your list to just the countries that exist on that continent.
-    - Add a dropdown with an option for each country. Selecting a country in the dropdown will remove the list of all countries and will list a specific countries information:
+    - Add a dropdown with an option for each country. Selecting a country in the dropdown will remove the list of all countries and list the specific country's information:
         1) Full Name
         2) Continent
         3) Three-letter ISO Code
@@ -18,8 +19,8 @@ Instructions:
         7) Currency Symbol, if avaible, in the `currencies.js` file
         8) Image of the country's flag (use https://www.countryflags.io/ for the image), if available
         9) Link to Wikipedia article (assume wikipedia url is based off country name in `/api/names`)
-    - In the list of all countries, clicking on an individual country's name, will also display the individual's country name
-    - Render 'Loading...' while data is being fetched from the API
+    - In the list of all country names, clicking on an individual country's name will also remove the list of all countries and list the specific country's information
+    - Render a loading state while data is being fetched from the API
 
 
 Extra Credit:
